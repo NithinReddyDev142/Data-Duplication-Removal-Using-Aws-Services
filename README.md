@@ -50,6 +50,9 @@ User:-
 
 
 SYSTEM TESTING
+
+
+
 Types of Software Testing: Different Testing Types with Details
 We, as testers, are aware of the various types of Software Testing like Functional Testing, Non-Functional Testing, Automation Testing, Agile Testing, and their sub-types, etc.
 Each type of testing has its own features, advantages, and disadvantages as well. However, in this tutorial, we have covered mostly each and every type of software testing which we usually use in our day-to-day testing life.
