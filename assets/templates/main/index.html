@@ -1,0 +1,285 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HostCloud - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{% static 'main/css/animate.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'main/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/magnific-popup.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'main/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+
+    <script src="{% static 'main/js/sweetalert.min.js '%}"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="{% url 'home' %}">HostCloud</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item active"><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+	         
+			  <li class="nav-item"><a href="{% url 'cloud_login' %}" class="nav-link" >Cloud</a></li>
+	          <li class="nav-item"><a href="{% url 'user_login' %}" class="nav-link">User</a></li>
+	        
+	          <li class="nav-item cta"><a href="{% url 'user_login' %}" class="nav-link"><span>Get started</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+    <div class="hero-wrap js-fullheight">
+      <div class="overlay"></div>
+      <div class="container-fluid px-0">
+      	<div class="row d-md-flex no-gutters slider-text align-items-center js-fullheight justify-content-start">
+	      	<img class="one-third js-fullheight align-self-end order-md-first img-fluid" src="{% static 'main/images/undraw_co-working_825n.svg' %}" alt="">
+	        <div class="one-forth d-flex align-items-center ftco-animate js-fullheight">
+	        	<div class="text mt-5">
+	        		<span class="subheading">HostCloud</span>
+	            <h1 class="mb-3"><span>CloudHost,</span> <span>Management,</span> <span></span></h1>
+	          
+	            <p><a href="{% url 'home' %}" class="btn btn-secondary px-4 py-3">Get in touch</a></p>
+	          </div>
+	        </div>
+	    	</div>
+      </div>
+    </div>
+
+    <section class="ftco-section ftco-partner">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-sm ftco-animate">
+    				<a href="#" class="partner"><img src="{% static 'main/images/partner-1.png' %}" class="img-fluid" alt="Colorlib Template"></a>
+    			</div>
+    			<div class="col-sm ftco-animate">
+    				<a href="#" class="partner"><img src="{% static 'main/images/partner-2.png' %}" class="img-fluid" alt="Colorlib Template"></a>
+    			</div>
+    			<div class="col-sm ftco-animate">
+    				<a href="#" class="partner"><img src="{% static 'main/images/partner-3.png' %}" class="img-fluid" alt="Colorlib Template"></a>
+    			</div>
+    			<div class="col-sm ftco-animate">
+    				<a href="#" class="partner"><img src="{% static 'main/images/partner-4.png' %}" class="img-fluid" alt="Colorlib Template"></a>
+    			</div>
+    			<div class="col-sm ftco-animate">
+    				<a href="#" class="partner"><img src="{% static 'main/images/partner-5.png' %}" class="img-fluid" alt="Colorlib Template"></a>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    
+    <!-- <section class="ftco-domain">
+    	<div class="container">
+    		<div class="row d-flex align-items-center">
+    			<div class="col-lg-5 heading-white mb-4 mb-sm-4 mb-lg-0 ftco-animate">
+    				<h2>Search Your Domain Name</h2>
+    				<p>A small river named Duden flows by their place</p>
+    			</div>
+    			<div class="col-lg-7 p-5 ftco-wrap ftco-animate">
+    				<form action="#" class="domain-form d-flex mb-3">
+              <div class="form-group domain-name">
+                <input type="text" class="form-control name px-4" placeholder="Enter your domain name...">
+              </div>
+              <div class="form-group domain-select d-flex">
+	              <div class="select-wrap">
+                  <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                  <select name="" id="" class="form-control">
+                  	<option value="">.com</option>
+                    <option value="">.net</option>
+                    <option value="">.biz</option>
+                    <option value="">.co</option>
+                    <option value="">.me</option>
+                  </select>
+                </div>
+                <input type="submit" class="search-domain btn btn-primary text-center" value="Search">
+	            </div>
+            </form>
+            <p class="domain-price mt-2">
+            	<span><small>.com</small> $9.75</span> 
+            	<span><small>.net</small> $9.50</span> 
+            	<span><small>.biz</small> $8.95</span> 
+            	<span><small>.co</small> $7.80</span>
+            	<span><small>.me</small> $7.95</span>
+            </p>
+    			</div>
+    		</div>
+    	</div>
+    </section> -->
+  
+   
+
+
+    <section class="ftco-section ftco-counter img" id="section-counter">
+    	<div class="container pb-md-5">
+    		<div class="row justify-content-center mb-5">
+          <div class="col-md-8 text-center heading-section heading-section-white ftco-animate">
+          	<h2 class="mb-3">We Always Try To Understand Users Expectation</h2>
+          </div>
+        </div>
+    		<div class="row justify-content-center">
+    			<div class="col-md-10">
+		    		<div class="row">
+		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		                <strong class="number" data-number="12000">0</strong>
+		                <span>Download</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		                <strong class="number" data-number="100">0</strong>
+		                <span>Awards Won</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		                <strong class="number" data-number="4050">0</strong>
+		                <span>Contributors</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		                <strong class="number" data-number="9000">0</strong>
+		                <span>Satisfied Customers</span>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb bg-light">
+    	<div class="container">
+    		<div class="row justify-content-center">
+    			<div class="col-lg-10">
+    				<div class="intro">
+    					<div class="row">
+    						<div class="col-md-8">
+    							<h3 style='color:green'>CloudHost Management</h3>
+    						
+    						</div>
+    						<div class="col-md-4 d-flex align-items-center justify-content-center">
+    							<a href="{% url 'home' %}" class="btn btn-tertiary px-4 py-3">Get started</a>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+  
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">HostCloud</h2>
+			  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <ul class="ftco-footer-social list-unstyled mb-0">
+                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+	              <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+	              <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Unseful Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Company</a></li>
+                <li><a href="#" class="py-2 d-block">Pricing</a></li>
+                <li><a href="#" class="py-2 d-block">Leadership</a></li>
+                <li><a href="#" class="py-2 d-block">Blog</a></li>
+                <li><a href="#" class="py-2 d-block">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Navigational</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Join Us</a></li>
+                <li><a href="#" class="py-2 d-block">Blog</a></li>
+                <li><a href="#" class="py-2 d-block">Privacy &amp; Policy</a></li>
+                <li><a href="#" class="py-2 d-block">Terms &amp; Condition</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Office</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="mr-3 fa fa-map-marker"></span><span class="text"><ul>
+						<li>L.B. Nagar</li>
+						<li>Hyderabad</li> 
+						 <li>Pin Code:500074. T.S.</li>
+					 </ul></span></li>
+	                <li><a href="#"><span class="mr-3 fa fa-phone"></span><span class="text">8555887986</span></a></li>
+	                <li><a href="#"><span class="mr-3 fa fa-envelope"></span><span class="text">info@codebook.in</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Designed & Developed <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">FZ INFOTECH </a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="{% static 'main/js/jquery.min.js' %}"></script>
+  <script src="{% static 'main/js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'main/js/popper.min.js' %}"></script>
+  <script src="{% static 'main/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'main/js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'main/js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'main/js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'main/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'main/js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'main/js/jquery.animateNumber.min.js' %}"></script>
+  <script src="{% static 'main/js/scrollax.min.js' %}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{% static 'main/js/google-map.js' %}"></script>
+  <script src="{% static 'main/js/main.js' %}"></script>
+    
+  </body>
+</html>
