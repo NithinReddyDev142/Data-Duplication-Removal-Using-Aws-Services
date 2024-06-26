@@ -1,2 +1,7 @@
 # Data-Duplication-Removal-Using-Aws-Services
 This is my first Project
+
+ABSTRACT
+Cloud computing comes all through core interest advancement of network computing, virtualization just as web advancements. With an expansion in the use of cloud storage, powerful strategies should be utilized to diminish equipment costs, meet the data transmission necessities, and build stockpiling proficiency. This can be accomplished by utilizing Data Deduplication. Using this, less information will be on the server thus require less equipment and users would have the option to put more data in the additional space available. At present utilization of cloud storage is expanding and to conquer expanding information issues, Data deduplication methods are utilized. Information Deduplication methods can’t be applied straightforwardly with security instruments. 
+In this paper, we are eliminating copy information to save storage space and speed up the organization. Here we applied MD5 hashing to generate a hash value (when uploaded to cloud storage) and then compare those with values (when the same file uploaded with a different name) to find out the duplicate data in the cloud environment. When deduplication is accomplished framework plan for secure information change in the organization. Security is accomplished through encryption and decoding of the information. This paper inspects secure deduplication strategy. After removal of duplicate data pointers will give reference to the original file.
+
