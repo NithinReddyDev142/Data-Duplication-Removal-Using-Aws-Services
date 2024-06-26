@@ -25,3 +25,29 @@ EXISTING SYSTEM:
 To study the data breaches in cloud storage, a study was carried by. Various instances of breaches were found where the data of the client was exposed by the service providers. The instances exposed that if the service provider or the client has access to data of other users the breaching of data was more. For handling the data breach problem, the authors suggested end-to-end encryption. The issues in deduplication while encryption were found by authors in. To resolve they proposed a novel encryption methodology. In the methodology, the encryption units were transformed into chunks and these chunks were used to produce symmetric keys. The symmetric key obtained were used to limit mapping between plain and ciphertext. To reclaim space that was lost during replicating files, a methodology was introduced by. The methodology involved convergent encryption that permitted duplicate files to be consolidated into a single file using diverse user keys and SALAD, a Self Arranging Lossy Association Database. 
 The authors in proposed FadeVersion, a system for cloud backup which also can act as a security layer. It was also able to provide cryptographic security to data.
 
+
+MODULES:
+
+
+There are 2 modules:
+1.	User 
+2.	Cloud
+User:-
+	Register
+	Login
+	Data Storage
+	Data search
+	Profiles
+	Downloads Files
+	Logout
+              Cloud:-
+	Login
+	Manage Users
+	View files
+	User Authentication
+
+
+
+
+
+
